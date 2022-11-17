@@ -1,9 +1,15 @@
 
 global:
   redis:
-    enable: false
+    enabled: true
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
 
-replica: 1
+replicas: 1
+
+ingress:
+  enabled: false
 
 service:
     ##  Redis Sentinel Service type
