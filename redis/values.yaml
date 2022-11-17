@@ -1,0 +1,14 @@
+
+global:
+  redis:
+    enable: false
+
+replica: 1
+
+service:
+    ##  Redis Sentinel Service type
+    type: ClusterIP
+    sentinelPort: 26379
+    redisPort: 6379
+
+annotations: {}
